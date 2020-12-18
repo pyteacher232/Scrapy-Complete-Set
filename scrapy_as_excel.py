@@ -38,6 +38,7 @@ class MainScraper(scrapy.Spider):
         'HTTPCACHE_POLICY': 'scrapy.extensions.httpcache.DummyPolicy',
         # 'LOG_ENABLED': False,
         'DOWNLOAD_TIMEOUT': timeout,
+        'URLLENGTH_LIMIT': 99999,
     }
 
     @classmethod
